@@ -1,7 +1,7 @@
 # 1st agent case_intake_agent
 
 # import libraries 
-from crewai import Agent, LLM
+from crewai import Agent, LLM # type: ignore
 
 # define llm
 llm = LLM(
