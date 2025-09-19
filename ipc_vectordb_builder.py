@@ -1,3 +1,5 @@
+# creating vector db
+
 # import libraries 
 from langchain_community.docstore.document import Document 
 from langchain_chroma import Chroma 
