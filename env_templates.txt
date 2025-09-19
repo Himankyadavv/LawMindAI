@@ -1,5 +1,0 @@
-GROQ_API_KEY="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"
-TAVILY_API_KEY="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"
-IPC_JSON_PATH="C:\Projects\LawMindAI\ipc.json"
-PERSIST_DIRECTORY_PATH="C:\Projects\LawMindAI\chromevector_db"
-IPC_COLLECTION_NAME='ipc_collection"
