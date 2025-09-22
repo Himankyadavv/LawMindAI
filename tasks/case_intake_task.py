@@ -14,16 +14,16 @@ case_intake_task = Task(
         "`case type`, `legal domain`, `summary`, 'relevant entities`, 'jurisdiction` (if any)."
     ),
     expected_output=(
-        "```json \n"
+        "```json\n"
         "{\n"
-        "\"case Type\": \"Wrongful Termination\",\n"
-        "\"legal Domain\": \"Labor Law\",\n"
-        "\"summary\": \"The user reports being fired after refusing to work overtime unpaid\",\n"
-        "\"relevant entities\":[\"user\"employee\"],n",
-        "\"jurisdiction\":\"India\",\n"
+        " \"case Type\": \"Wrongful Termination\",\n"
+        " \"legal Domain\": \"Labor Law\",\n"
+        " \"summary\": \"The user reports being fired after refusing to work overtime unpaid\",\n"
+        " \"relevant entities\":[\"user\",\"employee\"],\n",
+        " \"jurisdiction\":\"India\"\n"
         "}\n"
         "```"
-    )
+    ),
 
 
 )

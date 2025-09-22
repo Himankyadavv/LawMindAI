@@ -17,8 +17,9 @@ ipc_section_agent = Agent(
         "You are seasoned legal researcher with deep knowledge of Indian penal laws."
         "You specialize in mapping legal issue to applicable IPC sections with precision and clarity."
         "Your insight helps lawyer and assistant quickly understand the statutory basis of a case."),
-    llm=llm,
     tools=[search_ipc_sections],
+    llm=llm,
+    
     verbose=True
 )
 

@@ -11,6 +11,16 @@ from langchain_huggingface import HuggingFaceEmbeddings
 
 @tool("IPC Sections Search Tool")
 def search_ipc_sections(query:str) -> list[dict]:
+    """
+    Search IPC vector database for sections relevant to the input query.
+
+    Args:
+        query (str): User query in natural language.
+
+    Returns:
+        list[dict]: List of matching IPC sections with metadata and content.
+    """
+     
     load_dotenv()
     persist_dir = os.getenv("PERSIST_DIRECTORY_PATH")
     if not persist_dir:
