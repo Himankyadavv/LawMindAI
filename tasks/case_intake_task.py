@@ -4,6 +4,17 @@
 from crewai import Task 
 from agents.case_intake_agent import intake_agent
 
+expected_output = """```json
+{
+  "case_type": "Wrongful Termination",
+  "legal_domain": "Labor Law",
+  "summary": "The user reports being fired after refusing to work unpaid overtime.",
+  "relevant_entities": ["user", "employer"],
+  "jurisdiction": "India"
+}
+```"""
+    
+print(type(expected_output))
 case_intake_task = Task(
     agent=intake_agent,
     description=(
@@ -11,19 +22,8 @@ case_intake_task = Task(
         "{user_input}\n\n"
         "Your job is to interpret it, identify the legal issue, classify the legal domain" 
         "(e.g., civil, criminal, labor), and return a structured json with: "
-        "`case type`, `legal domain`, `summary`, 'relevant entities`, 'jurisdiction` (if any)."
+        "`case type`, `legal domain`, `summary`, `relevant entities`, `jurisdiction` (if any)."
     ),
-    expected_output=(
-        "```json\n"
-        "{\n"
-        " \"case Type\": \"Wrongful Termination\",\n"
-        " \"legal Domain\": \"Labor Law\",\n"
-        " \"summary\": \"The user reports being fired after refusing to work overtime unpaid\",\n"
-        " \"relevant entities\":[\"user\",\"employee\"],\n",
-        " \"jurisdiction\":\"India\"\n"
-        "}\n"
-        "```"
-    ),
-
-
+    expected_output=expected_output
+    
 )

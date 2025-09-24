@@ -11,7 +11,7 @@ llm = LLM(
 )
 
 ipc_section_agent = Agent(
-    role="IC Section Agent",
+    role="IPC Section Agent",
     goal="Identify the most relevant Indian Penal Code(IPC) section based on legal issue provided",
     backstory=(
         "You are seasoned legal researcher with deep knowledge of Indian penal laws."

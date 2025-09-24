@@ -20,18 +20,18 @@ ipc_section_task = Task(
         "- `content`\n"
     ),
     expected_output=(
-        "```json \n"
-        "{\n"
-        "   {\n"
-            "\"section\": \"Wrongful Termination\",\n"
-            "\"section_title\": \"Labor Law\",\n"
-            "\"chapter\": \"The user reports being fired after refusing to work overtime unpaid\",\n"
-            "\"chapter_title\":[\"user\"employee\"],n",
-            "\"content\":\"India\",\n"
-            "},\n"
-        "{ ... },\n"
-        "{ ... }\n"
-        "}\n"
+        "```json\n"
+        "[\n"
+        "  {\n"
+        "    \"section\": \"IPC Section 73\",\n"
+        "    \"section_title\": \"Compensation for breach of contract\",\n"
+        "    \"chapter\": \"Chapter 6\",\n"
+        "    \"chapter_title\": \"Of Breach of Contract\",\n"
+        "    \"content\": \"When a contract has been broken...\"\n"
+        "  },\n"
+        "  { ... },\n"
+        "  { ... }\n"
+        "]\n"
         "```"
     )
 )

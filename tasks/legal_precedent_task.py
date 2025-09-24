@@ -13,7 +13,7 @@ legal_precedent_task = Task(
         "Only use results from trusted Indian legal sources.\n\n"
         "Now write a single, cohesive, and well-structured paragraph that summarizes the key precedent cases, "
         "explains their importance, and how they relate to the legal issue at hand."
-    )
+    ),
     expected_output=(
         "A detailed paragraph summarizing the most relevant precedent cases and explaining their legal relevance to the current issue."
     ),
