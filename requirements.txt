@@ -1,6 +1,6 @@
 streamlit
 python-dotenv
-crewai>=0.11.0
+crewai[litellm]
 tavily
 langchain
 langchain-community
