@@ -4,9 +4,24 @@ import os
 os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 import streamlit as st
-from dotenv import load_dotenv
 
-load_dotenv()
+# ── Load secrets: support both .env (local) and st.secrets (Streamlit Cloud) ──
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass
+
+# Streamlit Cloud: load secrets into env vars so all modules can read them
+if hasattr(st, "secrets"):
+    for key in ["GEMINI_API_KEY", "TAVILY_API_KEY", "GROQ_API_KEY",
+                 "PERSIST_DIRECTORY_PATH", "IPC_COLLECTION_NAME"]:
+        try:
+            val = st.secrets.get(key)
+            if val:
+                os.environ[key] = val
+        except Exception:
+            pass
 
 # ── Page Configuration ──────────────────────────────────────────────
 st.set_page_config(
