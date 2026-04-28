@@ -1,12 +1,14 @@
 # 2nd IPC Section Agent
 
 #import libraries 
+from dotenv import load_dotenv
+load_dotenv()
+
 from crewai import Agent, LLM
 from tools.ipc_sections_search_tool import search_ipc_sections
 
-
 llm = LLM(
-    model="groq/llama-3.3-70b-versatile",
+    model="gemini/gemini-2.0-flash",
     temperature=0.3,
 )
 

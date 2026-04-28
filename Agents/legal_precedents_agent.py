@@ -1,13 +1,15 @@
 #3rd Legal Precedent Agent
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from crewai import Agent, LLM
 from tools.legal_precedent_search_tool import search_legal_precedents
 
-
 llm = LLM(
-    model="groq/llama-3.3-70b-versatile",
+    model="gemini/gemini-2.0-flash",
     temperature=0
-    )
+)
 
 precendent_agent = Agent(
     role="Legal Precedent Agent",

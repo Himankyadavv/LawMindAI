@@ -1,9 +1,12 @@
 # 3rd Legal Drafter Agent 
 
+from dotenv import load_dotenv
+load_dotenv()
+
 from crewai import Agent, LLM
 
 llm = LLM(
-    model="groq/llama-3.3-70b-versatile",
+    model="gemini/gemini-2.0-flash",
     temperature=0.4
 )
 

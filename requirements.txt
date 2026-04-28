@@ -1,7 +1,6 @@
 streamlit
 python-dotenv
-crewai[litellm]
-tavily
+protobuf==3.20.3
 langchain
 langchain-community
 langchain-chroma

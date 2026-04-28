@@ -1,8 +1,11 @@
 # streamlit code 
 
 #import libraries 
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 import streamlit as st
-from dotenv import load_dotenv 
+from dotenv import load_dotenv
 from crew import legat_assistant_crew
 
 load_dotenv()

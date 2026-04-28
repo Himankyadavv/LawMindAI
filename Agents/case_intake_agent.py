@@ -1,11 +1,13 @@
 # 1st agent case_intake_agent
 
 # import libraries 
-from crewai import Agent, LLM # type: ignore
+from dotenv import load_dotenv
+load_dotenv()
 
-# define llm
+from crewai import Agent, LLM
+
 llm = LLM(
-    model="groq/llama-3.3-70b-versatile",
+    model="gemini/gemini-2.0-flash",
     temperature=0
 )
 
