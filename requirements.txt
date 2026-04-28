@@ -1,7 +1,5 @@
 streamlit
 python-dotenv
-crewai[litellm]
-tavily
 langchain
 langchain-community
 langchain-chroma
