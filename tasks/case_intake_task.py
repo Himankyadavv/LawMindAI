@@ -2,7 +2,7 @@
 
 #import libraries 
 from crewai import Task 
-from agents.case_intake_agent import intake_agent
+from Agents.case_intake_agent import intake_agent
 
 expected_output = """```json
 {

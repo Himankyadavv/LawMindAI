@@ -1,7 +1,7 @@
 # legal_precedent_task.py
 
 from crewai import Task
-from agents.legal_precedents_agent import precendent_agent
+from Agents.legal_precedents_agent import precendent_agent
 from tasks.case_intake_task import case_intake_task
 from tasks.ipc_section_task import ipc_section_task
 

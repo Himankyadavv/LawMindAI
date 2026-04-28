@@ -3,7 +3,7 @@
 # import libraries 
 from crewai import Task 
 
-from agents.legal_drafter_agent import legal_agent
+from Agents.legal_drafter_agent import legal_agent
 from tasks.case_intake_task import case_intake_task
 from tasks.ipc_section_task import ipc_section_task
 from tasks.legal_precedent_task import legal_precedent_task

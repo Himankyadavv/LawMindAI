@@ -2,7 +2,7 @@
 
 # import libraries 
 from crewai import Task
-from agents.ipc_section_agent import ipc_section_agent
+from Agents.ipc_section_agent import ipc_section_agent
 from tasks.case_intake_task import case_intake_task
 
 # create task for finding ipc section 
