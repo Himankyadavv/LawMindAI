@@ -1,8 +1,8 @@
 streamlit
 python-dotenv
 crewai
+tavily
 langchain
 langchain-community
-langchain-openai
-faiss-cpu
-openai
+langchain-chroma
+langchain-huggingface
