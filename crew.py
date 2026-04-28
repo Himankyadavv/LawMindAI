@@ -1,6 +1,8 @@
 # Crew.py
 
-# import libraries 
+# import libraries
+import os
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
 
 from crewai import Crew
 from Agents.case_intake_agent import intake_agent
@@ -14,6 +16,6 @@ from tasks.legal_drafter_task import legat_drafter_task
 
 legat_assistant_crew = Crew(
     agents=[intake_agent, ipc_section_agent, precendent_agent, legal_agent],
-    tasks=[case_intake_task, ipc_section_task,legal_precedent_task, legat_drafter_task ],
+    tasks=[case_intake_task, ipc_section_task, legal_precedent_task, legat_drafter_task],
     verbose=True
-) 
+)
